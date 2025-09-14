@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Stories Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Генератор сторис</h1>
+  <input type="file" id="photo" accept="image/*"><br><br>
+  <textarea id="quote" placeholder="Вставь цитату..." rows="3" cols="30"></textarea><br>
+  <button onclick="makeStory()">Собрать сторис</button>
+  <button onclick="downloadStory()">Скачать</button>
+
+  <div class="card" id="story" style="display:none;">
+    <img id="storyImg" src="">
+    <div class="quote" id="storyQuote"></div>
+  </div>
+
+  <!-- библиотека для сохранения картинки -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
